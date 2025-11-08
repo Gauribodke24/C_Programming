@@ -2,9 +2,9 @@
 //
 //  Function Name : Accept
 //  Description :   It is used to print the desired number of "*" on screen.
-//  Input :          Integer
-//  Output :         Void
-//  Author :         Gauri Shekhar Bodke
+//  Input :         Integer
+//  Output :        Void
+//  Author :        Gauri Shekhar Bodke
 //  Date :           05/11/2025
 //
 ///////////////////////////////////////////////////////////
@@ -13,12 +13,10 @@
 
 void Display(int iNo)
 {
-    int iCnt = 0;
-
-    while(iCnt <= iNo)
+    while(iNo > 0)
     {
         printf("*\t");
-        iCnt++;
+        iNo --;
     }
 }
 
@@ -26,7 +24,7 @@ int main()
 {
     int iValue = 0;
 
-    printf("Enter the Number : \n");
+    printf("Enter the Number :\n");
     scanf("%d", &iValue);
 
     Display(iValue);
