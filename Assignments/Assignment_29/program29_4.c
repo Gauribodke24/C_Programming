@@ -1,0 +1,63 @@
+#include<stdio.h>
+
+/////////////////////////////////////////////////////////////////////////////////
+//  Function :      Pattern
+//  Description :   It is used to display pattern
+//  Input :         Integer, Integer
+//  Output :        void
+//  Author :        Gauri Shekhar Bodke
+//  Date :          28/12/2025
+//
+/////////////////////////////////////////////////////////////////////////////////
+
+/*
+    Enter number of row :
+    5
+    Enter number of column :
+    5
+    
+    1       2       3       4       5
+    -1      -2      -3      -4      -5
+    1       2       3       4       5
+    -1      -2      -3      -4      -5
+    1       2       3       4       5
+
+
+*/
+void Pattern(int iRow, int iCol)
+{
+    int i = 0;
+    int j = 0;
+
+    for(i = 1; i <= iRow; i++)
+    {
+        for(j = 1; j <= iCol; j++)
+        {
+            if(i % 2 == 0)
+            {
+                printf("%d\t", -j);
+            }
+            else
+            {
+                printf("%d\t", j);
+            }
+            
+        }
+        printf("\n");
+    }
+}
+
+int main()
+{
+    int iValue1 = 0, iValue2 = 0;
+
+    printf("Enter number of row :\n");
+    scanf("%d", &iValue1);
+
+    printf("Enter number of column :\n");
+    scanf("%d", &iValue2);
+
+    Pattern(iValue1, iValue2);
+
+    return 0;
+}
